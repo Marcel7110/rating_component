@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rating</title>
+</head>
+<body>
+    <main>
+        <div id="box_1" class="box">
+            <img class="logo" alt="" src="./images/icon-star.svg"/>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <form onsubmit="handleSubmit(event)">
+                <div>
+                    <input name="rat" type="radio" id="radio_1" value='1' onchange="setCurrent(1)"/>
+                    <label for="radio_1">1</label>
+                    
+                    <input name="rat" type="radio" id="radio_2" value='2' onchange="setCurrent(2)"/>
+                    <label for="radio_2">2</label>
+                    
+                    <input name="rat" type="radio" id="radio_3" value='3' onchange="setCurrent(3)"/>
+                    <label for="radio_3">3</label>
+                    
+                    <input name="rat" type="radio" id="radio_4" value='4' onchange="setCurrent(4)"/>
+                    <label for="radio_4">4</label>
+                    
+                    <input name="rat" type="radio" id="radio_5" value='5' onchange="setCurrent(5)"/>
+                    <label for="radio_5">5</label>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+        </div>
+        <div class="box hide_display" id="box_2">
+            <img alt="" src="./images/illustration-thank-you.svg"/>
+            <p class="sub_title" id="selected"></p>
+            <h1>Thank you!</h1>
+            <p>We appreaciate you taking the time to give a rating. If you ever need more support, don't heistate to get in touch!</p>
+        </div>
+    </main>
+</body>
+</html>
+
+<script src="./main.js"></script>
